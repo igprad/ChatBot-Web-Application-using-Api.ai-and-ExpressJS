@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 980px;
+}
+
+.form-control:focus {
+  border-color: rgba(82,168,236,0.8);
+  box-shadow: none;
+}
+
+/**
+ * Pages
+ */
+.page {
+  min-height: 100vh;
+}
+
+.page--gray {
+  background: #ececec;
+}
+
+/**
+ * Chat Window
+ */
+.chat-window {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/**
+ * Message
+ */
+.message {
+  clear: both;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.message--bot {
+  float: left;
+  text-align: left;
+}
+
+.message .message__content {
+  background: #efffde;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.message--bot .message__content {
+  background: #ececec;
+}
+
+.message .message__content .message__header {
+  font-size: 12px;
+}
+
+.message--bot .message__content .message__body ul {
+  padding-left: 18px;
+}
+
+.message .message__meta {
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+/**
+ * Message List
+ */
+.message-list {
+  overflow-y: overlay;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+/**
+ * Message Input
+ */
+
+.message-input .message-input__submit-button {
+  background: #6eadf1;
+  border: 1px solid #6eadf1;
+  color: #fff;
+}
+
+/**
+ * Navbar
+ */
+
+.navbar--green {
+  background: #3BCBBE;
+  margin-bottom: 0;
+}
+
+/**
+ * Panel
+ */
+ .panel {
+   border-radius: 0px;
+ }
+
+ .panel-heading {
+   border-bottom: 0px
+ }
+
+ .panel-body {
+  height: 100vh;
+  padding-top: 138px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+ }
+
+.navbar--green .navbar-header .navbar-brand {
+  color: #0d4c47;
+}
+
+.navbar--green .nav>li>a {
+  color: #0d4c47;
+}
+
+.navbar--green .nav>li>a:focus,
+.navbar--green .nav>li>a:hover {
+  background: #2bb3a7;
+}
+
+/**
+ * Login Panel
+ */
+.login-panel {
+  padding: 40px 30px;
+  background: #fff;
+  margin-top: 120px;
+  text-align: center;
+}
+
+/**
+ * Buttons
+ */
+
+.btn--primary {
+  background: #3BCBBE;
+  color: #fff;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: black;
+}

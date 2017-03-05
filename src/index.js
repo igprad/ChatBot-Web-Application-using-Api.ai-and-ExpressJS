@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const apiai = require('./apiai');
 const task = require('./task');
@@ -9,6 +10,7 @@ const PORT = 8080;
 
 //ini harus reset server node.js
 app.use(bodyParser.json());
+app.use(cors());
 
 // app.get('/',(req,res)=>{
 app.post('/',(req,res)=>{
